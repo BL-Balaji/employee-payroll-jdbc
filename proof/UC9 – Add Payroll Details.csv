@@ -1,0 +1,4 @@
+id,name,gender,salary,start,phone,address,department,basic_pay,deductions,taxable_pay,income_tax,net_pay
+1,Bill,M,100000,2018-01-01,NULL,India,,NULL,NULL,NULL,NULL,NULL
+2,Charlie,M,120000,2019-02-10,NULL,India,,NULL,NULL,NULL,NULL,NULL
+3,Terisa,F,150000,2020-03-15,NULL,India,,NULL,NULL,NULL,NULL,NULL
