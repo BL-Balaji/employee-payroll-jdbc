@@ -1,0 +1,5 @@
+Field,Type,Null,Key,Default,Extra
+id,int,NO,PRI,NULL,auto_increment
+name,varchar(100),YES,,NULL,
+salary,double,YES,,NULL,
+start,date,YES,,NULL,
