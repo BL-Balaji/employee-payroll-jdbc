@@ -1,0 +1,4 @@
+id,name,gender,salary,start,phone,address,department
+1,Bill,M,100000,2018-01-01,NULL,India,
+2,Charlie,M,120000,2019-02-10,NULL,India,
+3,Terisa,F,150000,2020-03-15,NULL,India,
