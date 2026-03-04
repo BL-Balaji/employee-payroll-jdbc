@@ -1,32 +1,24 @@
 package com.bridgelabz;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class EmployeePayrollService {
 
-    public void readEmployeePayrollData() {
+    public void updateEmployeeSalary() {
 
         try {
 
             Connection connection = DBConnection.getConnection();
 
-            String query = "SELECT * FROM employee_payroll";
+            String query =
+                    "UPDATE employee_payroll SET salary = 3000000 WHERE name = 'Terisa'";
 
             Statement statement = connection.createStatement();
 
-            ResultSet resultSet = statement.executeQuery(query);
+            int rowsUpdated = statement.executeUpdate(query);
 
-            while (resultSet.next()) {
-
-                int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
-                double salary = resultSet.getDouble("salary");
-                String startDate = resultSet.getString("start");
-
-                System.out.println(id + " | " + name + " | " + salary + " | " + startDate);
-            }
+            System.out.println("Rows Updated : " + rowsUpdated);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -37,6 +29,6 @@ public class EmployeePayrollService {
 
         EmployeePayrollService service = new EmployeePayrollService();
 
-        service.readEmployeePayrollData();
+        service.updateEmployeeSalary();
     }
 }
